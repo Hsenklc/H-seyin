@@ -1,0 +1,93 @@
+<!doctype html> 
+<html lang="tr">
+<head>
+  <title>Facebook</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    body {
+      background-color: #f0f2f5;
+      font-family: Arial, sans-serif;
+    }
+    .navbar-custom {
+      background-color: #1877f2;
+      height: 60px;
+      padding-left: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .navbar-custom .logo {
+      font-family: 'Arial Black', Arial, sans-serif;
+      font-size: 32px;
+      color: white;
+      user-select: none;
+    }
+    .login-container {
+      margin-top: 100px;
+      max-width: 400px;
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .login-container .logo {
+      font-family: 'Arial Black', Arial, sans-serif;
+      font-size: 36px;
+      color: #1877f2;
+      text-align: center;
+      margin-bottom: 25px;
+      user-select: none;
+    }
+    .btn-login {
+      background-color: #1877f2;
+      border: none;
+      width: 100%;
+      font-weight: 600;
+    }
+    .btn-login:hover {
+      background-color: #165cdb;
+    }
+    .forgot-password {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 10px;
+      display: block;
+      color: #1877f2;
+      text-decoration: none;
+    }
+    .forgot-password:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar-custom">
+    <div class="logo">facebook</div>
+  </nav>
+
+  <div class="container">
+    <div class="login-container">
+      <div class="logo">facebook</div>
+      <form>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="E-posta veya Telefon Numarası" required>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" placeholder="Şifre" required>
+        </div>
+        <button type="submit" class="btn btn-login btn-primary">Giriş Yap</button>
+        <a href="#" class="forgot-password">Şifreni mi unuttun?</a>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
