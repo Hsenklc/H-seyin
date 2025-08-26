@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hardwareControl.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Button Text="Titreşimi Aç" 
+                    BackgroundColor="Green"
+                    Margin="0,0,0,20"
+                    x:Name="btn1"
+                    Clicked="btn1_Clicked"/>
+
+            <Button Text="Titreşimi Kapat"
+                    BackgroundColor="Green"
+                    Margin="0,0,0,20"
+                    x:Name="btn2"
+                    Clicked="btn2_Clicked"/>
+            
+            <Button Text="Flash Aç"
+                    BackgroundColor="Green"
+                    Margin="0,0,0,20"
+                    x:Name="btn3"
+                    Clicked="btn3_Clicked"/>
+            
+            <Button Text="Flash Kapat"
+                    BackgroundColor="Green"
+                    Margin="0,0,0,20"
+                    x:Name="btn4"
+                    Clicked="btn4_Clicked"/>
+
+            <Button Text="Batarya Durumu"
+                    x:Name="btn5"
+                    BackgroundColor="Green"
+                    Margin="0,0,0,20"
+                    Clicked="btn5_Clicked"/>
+
+            <Button Text="Cihazın özellikleri" 
+                    x:Name="btn6"
+                    BackgroundColor="Green"
+                    Margin="0,0,0,20"
+                    Clicked="btn6_Clicked"/>
+
+            <Label Text="" x:Name="txtozellik" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
