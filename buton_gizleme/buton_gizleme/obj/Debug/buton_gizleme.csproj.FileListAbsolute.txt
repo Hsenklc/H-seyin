@@ -1,0 +1,10 @@
+C:\Users\acer\Desktop\buton_gizleme\buton_gizleme\bin\Debug\buton_gizleme.exe.config
+C:\Users\acer\Desktop\buton_gizleme\buton_gizleme\bin\Debug\buton_gizleme.exe
+C:\Users\acer\Desktop\buton_gizleme\buton_gizleme\bin\Debug\buton_gizleme.pdb
+C:\Users\acer\Desktop\buton_gizleme\buton_gizleme\obj\Debug\buton_gizleme.csproj.AssemblyReference.cache
+C:\Users\acer\Desktop\buton_gizleme\buton_gizleme\obj\Debug\buton_gizleme.Form1.resources
+C:\Users\acer\Desktop\buton_gizleme\buton_gizleme\obj\Debug\buton_gizleme.Properties.Resources.resources
+C:\Users\acer\Desktop\buton_gizleme\buton_gizleme\obj\Debug\buton_gizleme.csproj.GenerateResource.cache
+C:\Users\acer\Desktop\buton_gizleme\buton_gizleme\obj\Debug\buton_gizleme.csproj.CoreCompileInputs.cache
+C:\Users\acer\Desktop\buton_gizleme\buton_gizleme\obj\Debug\buton_gizleme.exe
+C:\Users\acer\Desktop\buton_gizleme\buton_gizleme\obj\Debug\buton_gizleme.pdb
