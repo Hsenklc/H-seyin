@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sqlDeneme.sqlPage"
+             Title="sqlPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Rehber Programı"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="30"
+            />
+        
+        <Button Text="Veri Tabanını Oluştur"
+                x:Name="btn1"
+                Clicked="btn1_Clicked"
+                />
+
+        <Entry  x:Name="txtID"
+                Placeholder="ID" 
+                Margin="0,0,0,20"/>
+        
+        <Entry  x:Name="txtAd"
+                Placeholder="Adınız"
+                Margin="0,0,0,20"/>
+        
+        <Entry  x:Name="txtSoyad"
+                Placeholder="Soyadınız"
+                Margin="0,0,0,20"/>
+        
+        <Entry  x:Name="txtTelefon"
+                Placeholder="Telefon No"
+                Margin="0,0,0,20"/>
+
+        <Button x:Name="btn2"
+                Text="Kaydet" 
+                Clicked="btn2_Clicked"
+                Margin="0,0,0,20"/>
+
+        <Button x:Name ="btn3"
+                Text="Listele"
+                Clicked="btn3_Clicked"
+                Margin="0,0,0,20"/>
+
+        <ListView x:Name="LstKisiler"/>
+        
+    </VerticalStackLayout>
+</ContentPage>
