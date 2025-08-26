@@ -1,0 +1,99 @@
+
+@media (max-width: 1498px) {
+	#urunDetay .right {
+		padding-left: 1%;
+	}
+	#urunDetay h4 {
+		margin-top: 8%;
+	}
+}
+
+@media (max-width: 1400px) {
+	.nav-item {
+		margin-left: 15px !important;
+	}
+}
+
+
+@media (max-width: 1250px) { 
+	nav {
+
+		letter-spacing: -0.01px;
+	}
+	.nav-item {
+		margin-left: 15px !important;
+	}
+
+	#content-index h3 {
+		font-size: 22px;
+	}
+
+	#urunDetay .productCarousel {
+		position: absolute;
+		margin-top: -4%;
+	}
+	#urunDetay .urunMadde {
+		margin-top: 150px;
+	}
+}
+
+@media (max-width: 1100px) { 
+	#myslider .carousel-caption h5 {
+		font-size: 35px;
+		margin-top: 10px;
+	}
+	#myslider .carousel-caption p {
+		font-size: 13px;
+	}
+	#urunDetay .productCarousel {
+		margin-left: 0;
+	}
+	#urunDetay .urunDetayAlt {
+		width: 45% !important;
+	}
+}
+
+@media (max-width: 992px) {
+	.nav-item {
+		margin-top: -10px;
+		padding-left: 15px; 
+	}
+	.nav-link {
+		margin-top: -10px;
+		border-bottom: 2px solid red;
+		width: 200px;
+	}
+	#myslider .carousel-indicators {
+	  right: -20% !important;
+	}
+
+	#myslider .carousel-caption h5 {
+		font-size: 35px;
+		margin-top: 10px;
+	}
+	#myslider .carousel-caption p {
+		font-size: 13px;
+	}
+	#urunDetay .productCarousel {
+		position: absolute;
+		margin-top: -4%;
+	}
+
+	#urunDetay .urunMadde {
+		margin-top: 150px;
+	}
+}
+
+@media (max-width: 768px) {
+	#myslider .carousel-indicators {
+	  right: -20% !important;
+	}
+}
+
+@media (max-width: 600px) {
+	#iletisim a {
+		width: 46%;
+	}
+}
+
+
