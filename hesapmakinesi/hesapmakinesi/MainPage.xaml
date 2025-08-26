@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hesapmakinesi.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <!-- İlk sayıyı al -->
+            <Entry x:Name="firstNumberEntry" Placeholder="Birinci Sayıyı Girin" Keyboard="Numeric" />
+
+            <!-- İkinci sayıyı al -->
+            <Entry x:Name="secondNumberEntry" Placeholder="İkinci Sayıyı Girin" Keyboard="Numeric" />
+
+            <!-- Sonuç etiketini ekle -->
+            <Label x:Name="resultLabel" Text="Sonuç burada görünecek" FontSize="20" HorizontalTextAlignment="Center"/>
+
+            <!-- İşlem butonları -->
+            <HorizontalStackLayout Spacing="10">
+                <Button Text="+" Clicked="OnAddClicked" />
+                <Button Text="-" Clicked="OnSubtractClicked" />
+                <Button Text="×" Clicked="OnMultiplyClicked" />
+                <Button Text="÷" Clicked="OnDivideClicked" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

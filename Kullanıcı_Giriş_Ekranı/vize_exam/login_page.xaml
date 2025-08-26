@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="vize_exam.login_page"
+             Title="login_page">
+
+    <ContentPage Title="Sign up">
+        <ScrollView>
+            <VerticalStackLayout>
+
+                <Label Text="Sign up"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       FontSize="25"
+                       />
+
+                <Entry Margin="0,0,0,20"
+                       x:Name="txtusername"
+                       Placeholder="Usarname"
+                        />
+
+                <Entry Margin="0,0,0,20"
+                        x:Name="txtpassword"
+                        Placeholder="Password"
+                        />
+
+                <Button Margin="0,0,0,20"
+                        BackgroundColor="Green"
+                        Text="Save User"
+                        Clicked="Button_Clicked_1"
+                        />
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage>
+
+    <ContentPage Title="Sign in">
+        <ScrollView>
+            <VerticalStackLayout>
+
+                <Label Text="Sign in"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="25"
+                       />
+
+                <Entry Margin="0,0,0,20"
+                       x:Name="txtusername2"
+                       Placeholder="UserName"
+                       />
+
+                <Entry Margin="0,0,0,20"
+                       x:Name="txtpassword2"
+                       Placeholder="Password"
+                       />
+
+                <Button Margin="0,0,0,20"
+                        BackgroundColor="Green"
+                        Text="Login"
+                        Clicked="Button_Clicked_2"
+                        />
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage>
+    
+</TabbedPage>
