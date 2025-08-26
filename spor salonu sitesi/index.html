@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerZone Gym</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #f5f5f5;
+        }
+        .navbar {
+            background-color: #1f1f1f;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: black;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .trainer-card img {
+            height: 300px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #1f1f1f;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="resimler/a.PNG" alt="Logo" width="40" height="40" class="me-2">
+            <span>PowerZone</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Anasayfa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#hakkimizda">Hakkımızda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#egitmenler">Eğitmenler</a></li>
+                <li class="nav-item"><a class="nav-link" href="#fiyatlar">Fiyatlandırma</a></li>
+                <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Güç Seninle!</h1>
+            <p class="lead">Hayalindeki vücut için bugün başla.</p>
+            <a href="#" class="btn btn-danger btn-lg">Üyelik Başlat</a>
+        </div>
+    </section>
+
+    <!-- Hakkımızda -->
+    <section id="hakkimizda" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Hakkımızda</h2>
+            <p class="text-center">PowerZone olarak amacımız; üyelerimize en kaliteli antrenman deneyimini yaşatmak. Alanında uzman eğitmen kadromuz ve son teknoloji ekipmanlarımızla hayallerinizdeki forma ulaşmak artık çok kolay!</p>
+        </div>
+    </section>
+
+    <!-- Eğitmenler -->
+    <section id="egitmenler" class="py-5 bg-dark">
+        <div class="container">
+            <h2 class="text-center mb-4">Eğitmenlerimiz</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card trainer-card text-dark">
+                        <img src="resimler/istockphoto-675179390-612x612.jpg" class="card-img-top" alt="Eğitmen">
+                        <div class="card-body">
+                            <h5 class="card-title">Mert Yılmaz</h5>
+                            <p class="card-text">Kişisel Antrenör • Fonksiyonel Antrenman Uzmanı</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card trainer-card text-dark">
+                        <img src="resimler/istockphoto-475495254-612x612.jpg" class="card-img-top" alt="Eğitmen">
+                        <div class="card-body">
+                            <h5 class="card-title">Moussa Sow</h5>
+                            <p class="card-text">Pilates Eğitmeni • Reformer Uzmanı</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card trainer-card text-dark">
+                        <img src="resimler/istockphoto-1324042769-612x612.jpg" class="card-img-top" alt="Eğitmen">
+                        <div class="card-body">
+                            <h5 class="card-title">Baran Koç</h5>
+                            <p class="card-text">Vücut Geliştirme Antrenörü • Beslenme Koçu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Fiyatlandırma -->
+        <section id="fiyatlar" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Fiyatlandırma</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card bg-dark text-white text-center border-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Temel Üyelik</h5>
+                                <p class="card-text">Spor salonu kullanımı<br>Grup derslerine katılım</p>
+                                <h4 class="card-price">₺499 / ay</h4>
+                                <a href="#" class="btn btn-outline-light mt-3">Üye Ol</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-danger text-white text-center border-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Standart Üyelik</h5>
+                                <p class="card-text">Temel üyelik avantajları<br>1 kişisel antrenman / hafta</p>
+                                <h4 class="card-price">₺799 / ay</h4>
+                                <a href="#" class="btn btn-light mt-3">Üye Ol</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card bg-dark text-white text-center border-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Premium Üyelik</h5>
+                                <p class="card-text">Sınırsız kişisel antrenman<br>Beslenme danışmanlığı</p>
+                                <h4 class="card-price">₺1.199 / ay</h4>
+                                <a href="#" class="btn btn-outline-light mt-3">Üye Ol</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+    <!-- İletişim -->
+    <section id="iletisim" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">İletişim</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Adres</h5>
+                    <p>Atatürk Caddesi, İzmir</p>
+                    <h5>Telefon</h5>
+                    <p>+90 555 123 45 67</p>
+                    <h5>E-posta</h5>
+                    <p>info@powerfit.com</p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="isim" class="form-label">Adınız</label>
+                            <input type="text" class="form-control" id="isim">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-posta</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mesaj" class="form-label">Mesajınız</label>
+                            <textarea class="form-control" id="mesaj" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2025 PowerZone Gym. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
