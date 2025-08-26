@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background-color: white;
+            border-bottom: 1px solid #ccc;
+        }
+        .left-menu {
+            display: flex;
+            align-items: center;
+        }
+        .left-menu img {
+            height: 40px;
+            margin-right: 20px;
+        }
+        .left-menu nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .right-menu {
+            display: flex;
+            align-items: center;
+        }
+        .right-menu a {
+            margin-left: 15px;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .giris {
+            border: 1px solid #006241;
+            color: #006241;
+        }
+        .katil {
+            background-color: black;
+            color: white;
+        }
+        .alisveris {
+            background-color: #006241;
+            color: white;
+        }
+        .slider {
+            position: relative;
+            overflow: hidden;
+        }
+        .slider img {
+            width: 100%;
+            height: auto;
+            display: none;
+        }
+        .slider img.active {
+            display: block;
+        }
+        .slider button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .slider .prev {
+            left: 10px;
+        }
+        .slider .next {
+            right: 10px;
+        }
+        .new-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .new-section h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .new-section p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        .tabs span {
+            font-weight: bold;
+            font-size: 22px;
+            color: #1e3932;
+            cursor: pointer;
+        }
+        .tabs .active {
+            border-bottom: 4px solid #1e3932;
+        }
+        .product-slider {
+            position: relative;
+            overflow: hidden;
+            max-width: 100%;
+            padding: 0 40px;
+        }
+        .product-slider .products {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .product {
+            flex: 0 0 25%;
+            text-align: center;
+        }
+        .product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            background-color: #1e3932;
+            padding: 20px;
+        }
+        .product p {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .product-slider button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .product-slider .prev {
+            left: 0;
+        }
+        .product-slider .next {
+            right: 0;
+        }
+        .extra-section {
+            width: 100%;
+            margin-top: 40px;
+        }
+        .extra-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .second-extra-section {
+            width: 100%;
+            margin-top: 40px;
+        }
+        .second-extra-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left-menu">
+            <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/2048px-Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks">
+            <nav>
+                <a href="#">REWARDS</a>
+                <a href="#">MENÜ</a>
+                <a href="#">KURUMSAL</a>
+                <a href="#">COMMUNITY STORE</a>
+            </nav>
+        </div>
+        <div class="right-menu">
+            <span style="margin-right: 10px;">📍 Mağazalarımız</span>
+            <a href="#" class="giris">Giriş</a>
+            <a href="#" class="katil">Hemen Katıl</a>
+            <a href="#" class="alisveris">Alışverişe Başla →</a>
+        </div>
+    </header>
+
+    <div class="slider">
+        <img src="ımg/pAtDxBWGbV_3840x1560.webp" class="active" alt="slider 1">
+        <img src="ımg/z.webp" alt="slider 2">
+        <img src="ımg/5XlO1gELZq_3840x15.webp" alt="slider 3">
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+    </div>
+
+    <div class="new-section">
+        <h2>İçecekler</h2>
+        <p>Yepyeni içeceklerle tanışmak için harika bir gün!</p>
+        <div class="tabs">
+            <span class="active">İçecekler</span>
+            <span>Yiyecekler</span>
+            <span>Evde Kahve Keyfi</span>
+        </div>
+        <div class="product-slider">
+            <div class="products" id="productSlider">
+                <div class="product"><img src="ımg/1j19r3y78mj.png" alt="kahve1"><p>Spanish Latte</p></div>
+                <div class="product"><img src="ımg/1j19r3y78mf.png" alt="kahve2"><p>Iced Matcha Latte</p></div>
+                <div class="product"><img src="ımg/a.png" alt="kahve3"><p>Iced Strawberry Matcha Latte</p></div>
+                <div class="product"><img src="ımg/y.png" alt="kahve4"><p>Tiramisu Frappuccino</p></div>
+                <div class="product"><img src="ımg/1j19r3y78mj.jpg" alt="kahve4"><p>Iced Spanish Latte</p></div>
+                <div class="product"><img src="ımg/b.png" alt="kahve4"><p>Matcha Latte</p></div>
+            </div>
+            <button class="prev" onclick="scrollProducts(-1)">❮</button>
+            <button class="next" onclick="scrollProducts(1)">❯</button>
+        </div>
+    </div>
+    
+    <div class="image-gallery-slider" style="width: 100%; max-width: 1200px; margin: 40px auto; position: relative; overflow: hidden; border-radius: 10px;">
+        <div class="image-track" style="display: flex; transition: transform 0.5s ease-in-out;">
+            <img src="ımg/ZpRR8inIgS_1200x545.webp" alt="Slider 1" style="width: 1200px; height: 545px; flex-shrink: 0;">
+            <img src="ımg/y6QZv2nN58_1200x545.webp" alt="Slider 2" style="width: 1200px; height: 545px; flex-shrink: 0;">
+            <img src="ımg/yCUxdYS-Fe_1200x545.webp" alt="Slider 3" style="width: 1200px; height: 545px; flex-shrink: 0;">
+            <img src="ımg/KOjYX3PFgz_1200x545.webp" alt="Slider 4" style="width: 1200px; height: 545px; flex-shrink: 0;">
+        </div>
+        <button onclick="moveImageSlider(-1)" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 30px; padding: 5px 10px; cursor: pointer;">❮</button>
+        <button onclick="moveImageSlider(1)" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 30px; padding: 5px 10px; cursor: pointer;">❯</button>
+    </div>
+
+  
+    <div class="recommend-section">
+        <h2 style="text-align: center; font-size: 36px; margin-top: 60px;">Önerilenler</h2>
+        <div class="product-slider">
+            <div class="products" id="recommendSlider">
+                <div class="product"><img src="ımg/y.png" alt="urun1"><p>Tiramisu Cream Iced Latte</p></div>
+                <div class="product"><img src="ımg/abc.png" alt="urun2"><p>Çilekli Pasta</p></div>
+                <div class="product"><img src="ımg/1j19r3y78m1j.png" alt="urun3"><p>Çilekli Kahveli Pasta</p></div>
+                <div class="product"><img src="ımg/k.png" alt="urun4"><p>Kırmızı Meyveli Çikolatalı Sufle</p></div>
+                <div class="product"><img src="ımg/1j19r3y78mj.png" alt="urun5"><p>Latte</p></div>
+                <div class="product"><img src="ımg/1j19r3y78mf.png" alt="urun6"><p> Iced Matcha Latte</p></div>
+                <div class="product"><img src="ımg/a.png" alt="urun7"><p>Iced Strawberry Matcha Latte</p></div>
+                <div class="product"><img src="ımg/b.png" alt="urun8"><p>Matcha Latte</p></div>
+            </div>
+            <button class="prev" onclick="scrollRecommend(-1)">❮</button>
+            <button class="next" onclick="scrollRecommend(1)">❯</button>
+        </div>
+    </div>
+
+    <div class="extra-section">
+        <img src="ımg/NCihnU7kk-_1200x400.png" alt="extra section">
+    </div>
+
+    
+    <script>
+        let current = 0;
+        const slides = document.querySelectorAll(".slider img");
+        const prevBtn = document.querySelector(".slider .prev");
+        const nextBtn = document.querySelector(".slider .next");
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove("active"));
+            slides[index].classList.add("active");
+        }
+
+        function nextSlide() {
+            current = (current + 1) % slides.length;
+            showSlide(current);
+        }
+
+        function prevSlide() {
+            current = (current - 1 + slides.length) % slides.length;
+            showSlide(current);
+        }
+
+        nextBtn.addEventListener("click", nextSlide);
+        prevBtn.addEventListener("click", prevSlide);
+
+        setInterval(nextSlide, 4000);
+
+        let scrollIndex = 0;
+        function scrollProducts(direction) {
+            const slider = document.getElementById("productSlider");
+            const items = slider.children.length;
+            scrollIndex += direction;
+            if (scrollIndex < 0) scrollIndex = 0;
+            if (scrollIndex > items - 4) scrollIndex = items - 4;
+            slider.style.transform = `translateX(-${scrollIndex * 25}%)`;
+        }
+
+        let recommendIndex = 0;
+        function scrollRecommend(direction) {
+            const slider = document.getElementById("recommendSlider");
+            const items = slider.children.length;
+            recommendIndex += direction;
+            if (recommendIndex < 0) recommendIndex = 0;
+            if (recommendIndex > items - 4) recommendIndex = items - 4;
+            slider.style.transform = `translateX(-${recommendIndex * 25}%)`;
+        }
+        let imageSliderIndex = 0;
+function moveImageSlider(direction) {
+    const slider = document.querySelector(".image-track");
+    const totalImages = slider.children.length;
+    imageSliderIndex += direction;
+    if (imageSliderIndex < 0) imageSliderIndex = 0;
+    if (imageSliderIndex > totalImages - 1) imageSliderIndex = totalImages - 1;
+    slider.style.transform = `translateX(-${imageSliderIndex * 1200}px)`;
+}
+ setInterval(() => {
+        moveImageSlider(1);
+    }, 5000);
+    </script>
+    <footer style="background-color: #1e3932; color: white; padding: 50px 20px 20px; font-family: Arial, sans-serif;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+    
+    
+    <div style="flex: 1 1 250px;">
+      <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/2048px-Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks" style="width: 80px; margin-bottom: 15px;">
+      <p style="font-size: 14px; color: #ddd;">Starbucks ile kahvenin ötesine geç. Sürdürülebilirlik, topluluk ve daha fazlası için bize katıl.</p>
+    </div>
+
+
+    <div style="flex: 1 1 200px;">
+      <h3 style="font-size: 18px; margin-bottom: 15px;">Keşfet</h3>
+      <ul style="list-style: none; padding: 0; line-height: 1.8;">
+        <li><a href="#" style="color: #ddd; text-decoration: none;">Hakkımızda</a></li>
+        <li><a href="#" style="color: #ddd; text-decoration: none;">Kariyer</a></li>
+        <li><a href="#" style="color: #ddd; text-decoration: none;">Sürdürülebilirlik</a></li>
+        <li><a href="#" style="color: #ddd; text-decoration: none;">Mağazalar</a></li>
+      </ul>
+    </div>
+
+  
+    <div style="flex: 1 1 200px;">
+      <h3 style="font-size: 18px; margin-bottom: 15px;">Yardım</h3>
+      <ul style="list-style: none; padding: 0; line-height: 1.8;">
+        <li><a href="#" style="color: #ddd; text-decoration: none;">Sık Sorulan Sorular</a></li>
+        <li><a href="#" style="color: #ddd; text-decoration: none;">İletişim</a></li>
+        <li><a href="#" style="color: #ddd; text-decoration: none;">Gizlilik Politikası</a></li>
+        <li><a href="#" style="color: #ddd; text-decoration: none;">Çerez Tercihleri</a></li>
+      </ul>
+    </div>
+
+    
+    <div style="flex: 1 1 200px;">
+      <h3 style="font-size: 18px; margin-bottom: 15px;">Bizi Takip Et</h3>
+      <div style="display: flex; gap: 15px;">
+        <a href="#" style="color: white; transition: 0.3s;">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width: 28px; filter: brightness(0) invert(1);">
+        </a>
+        <a href="#" style="color: white; transition: 0.3s;">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" style="width: 28px; filter: brightness(0) invert(1);">
+        </a>
+        <a href="#" style="color: white; transition: 0.3s;">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" style="width: 28px; filter: brightness(0) invert(1);">
+        </a>
+        <a href="#" style="color: white; transition: 0.3s;">
+          <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style="width: 28px; filter: brightness(0) invert(1);">
+        </a>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div style="text-align: center; font-size: 12px; color: #aaa; border-top: 1px solid #444; margin-top: 40px; padding-top: 20px;">
+    © 2025 Starbucks Coffee Company. Tüm hakları saklıdır.
+  </div>
+</footer>
+ <script src="js/script.js"></script>
+</body>
+</html>
